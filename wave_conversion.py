@@ -11,7 +11,7 @@ c_on_g=ce/g
 
 
 #only calculating for 850hPa
-qvr_nc = xr.open_dataset('qvr_coefficient_1980_k3-40_p2-10_28plev_era5.nc').sel(p=850)
+qvr_nc = xr.open_dataset('qvr_coefficient_1980_k2-40_p2-30_28plev_era5.nc').sel(p=850)
 qf_mode = qvr_nc.qn
 vf_mode = qvr_nc.vn
 rf_mode = qvr_nc.rn
